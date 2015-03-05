@@ -1,6 +1,10 @@
 {
   "name": "htmlsplit",
   "version": "1.0.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/markbirbeck/htmlsplit.git"
+  },
   "description": "Split an HTML document into a number of lines, based on the intent in the original markup.",
   "main": "index.js",
   "scripts": {
