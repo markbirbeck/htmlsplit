@@ -1,7 +1,7 @@
 {
   "name": "htmlsplit",
   "version": "0.0.0",
-  "description": "Split an HTML document into a number of lines, based on the original markup.",
+  "description": "Split an HTML document into a number of lines, based on the intent in the original markup.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
