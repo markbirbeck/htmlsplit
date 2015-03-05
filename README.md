@@ -1,5 +1,7 @@
 # htmlsplit
 
+[![wercker status](https://app.wercker.com/status/1bd160abd66972292d815248f10e6bc7/m/master "wercker status")](https://app.wercker.com/project/bykey/1bd160abd66972292d815248f10e6bc7)
+
 `htmlsplit` splits HTML documents into lines that hopefully reflect the intent of the author.
 
 ## Introdction
