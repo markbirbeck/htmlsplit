@@ -4,7 +4,7 @@
 
 `htmlsplit` splits HTML documents into lines that hopefully reflect the intent of the author.
 
-## Introdction
+## Introduction
 
 A web page may have the following layout:
 
@@ -97,3 +97,9 @@ htmlSplit(
 ```
 
 The function can also take a second parameter which if `true` will add debug information to the output.
+
+## Changelog
+
+### 2015-03-05 (v1.0.0)
+
+Initial release.
