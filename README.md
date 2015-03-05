@@ -4,7 +4,7 @@
 
 `htmlsplit` splits HTML documents into lines that hopefully reflect the intent of the author.
 
-## Introdction
+## Introduction
 
 A web page may have the following layout:
 
