@@ -1,11 +1,18 @@
 {
   "name": "htmlsplit",
-  "version": "0.0.0",
-  "description": "Split an HTML document into a number of lines, based on the original markup.",
+  "version": "1.0.0",
+  "description": "Split an HTML document into a number of lines, based on the intent in the original markup.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Mark Birbeck <mark.birbeck@gmail.com> (http://markbirbeck.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "~0.18.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^5.1.0"
+  }
 }
