@@ -18,6 +18,7 @@ function mergeElements($node, $, debug) {
 
     var addSpace = [
       'dt',
+      'td',
       'wbr'
     ];
 
