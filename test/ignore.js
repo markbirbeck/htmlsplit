@@ -1,4 +1,4 @@
-require('should');
+require('chai').should();
 var htmlSplit = require('..');
 
 describe('ignore', function() {

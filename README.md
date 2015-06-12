@@ -100,6 +100,12 @@ The function can also take a second parameter which if `true` will add debug inf
 
 ## Changelog
 
+### 2015-06-12 (v1.1.0)
+
+Add a space between adjacent table cells. (Fixes #1)
+
+Upgrade `mocha`, and replace `should` with `chai`.
+
 ### 2015-03-05 (v1.0.0)
 
 Initial release.

@@ -1,4 +1,4 @@
-require('should');
+require('chai').should();
 var htmlSplit = require('..');
 
 describe('blocks', function() {
@@ -104,21 +104,38 @@ describe('blocks', function() {
       });
     });
 
-    it('<td>', function() {
-      htmlSplit(
-        [
-          '<table>',
-          '  <tr>',
-          '    <td>Term Starts:</td>',
-          '    <td>Wednesday 7 January 2015</td>',
-          '  </tr>',
-          '  <tr>',
-          '    <td>Term Ends:</td>',
-          '    <td>Friday 27 March 2015</td>',
-          '  </tr>',
-          '</table>'
-        ].join('')
-      ).should.eql(output);
+    describe('<td>', function() {
+      it('on separate lines', function() {
+        htmlSplit(
+          [
+            '<table>',
+            '  <tr>',
+            '    <td>Term Starts:</td>',
+            '    <td>Wednesday 7 January 2015</td>',
+            '  </tr>',
+            '  <tr>',
+            '    <td>Term Ends:</td>',
+            '    <td>Friday 27 March 2015</td>',
+            '  </tr>',
+            '</table>'
+          ].join('')
+        ).should.eql(output);
+      });
+
+      it('on the same line', function() {
+        htmlSplit(
+          [
+            '<table>',
+            '  <tr>',
+            '    <td>Term Starts:</td><td>Wednesday 7 January 2015</td>',
+            '  </tr>',
+            '  <tr>',
+            '    <td>Term Ends:</td><td>Friday 27 March 2015</td>',
+            '  </tr>',
+            '</table>'
+          ].join('')
+        ).should.eql(output);
+      });
     });
   });
 });
